@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    
+}
+
+body{
+    background-color: #192e3a;
+}
+
+
+.Container-cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 40px;
+    height: auto;
+}
+
+.logo h1{
+    color: #fff;
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul li a:hover{
+    color: #5bacdf;
+
+}
+
+.btn{
+    color: #fff;
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #011927;
+}
+
+.Meio{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.Direita img{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+
+.Esquerda{
+    max-width: 100%;
+}
+
+
+
+.Title h1{
+    font-size: 50px;
+    color: #ccc;
+}
+
+.Esquerda p{
+    color: #ccc;
+    line-height: 2.5rem;
+}
+
+button{
+    color: #fff;
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+
+    color: #fff;
+    background-color: #2889c2;
+
+}
+
+aside{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 740px) {
+
+    ul{
+        display: none;
+    }
+
+    .links{
+        display: block;
+    }
+
+   .logo{
+    margin-right: 15rem;
+   }
+
+  
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        color: #ccc;
+    
+    }
+    
+    #barra-menu{
+        background: #2889c2;
+        height: 110vh;
+        width: 0px;
+        transition: 0.3s all;
+        
+    }
+
+    #barra-menu ul{
+
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem;
+        
+
+    }
+
+    
+ 
+    #barra-menu ul li a{
+        color: #011927;
+        text-decoration: none;
+        font-size: 1rem;
+        width: 100%;
+       
+      
+    }
+    
+    #barra-menu ul li a:hover{
+        padding: 8px;
+        border-radius: 15px;
+        background: #5bacdf;
+    
+    }
+    
+    .C-icon{
+    
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        overflow: hidden;
+       
+    }
+    
+    .C-icon span{
+        color: #FBF7F7;
+        font-size: 1rem;
+        
+        
+    }
+    
+    .C-icon span:hover{
+        transition: 0.2s;
+        transform: 0.5;
+        color: #C229AA;
+    }
+    
+}
+
+
+@media screen and (max-width: 580px){
+    
+    .Title h1{
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+    }
+
+    .Esquerda p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 450px;
+    }
+
+    button{
+
+        margin-left: 1.5rem;
+
+    }
+
+    .Direita img{
+        max-width: 100%;
+        width: 450px;
+        margin-top: 4.5rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+     .Direita img{
+        margin-left: 1.2rem;
+     }
+
+}
+
+@media screen and (max-width: 414px){
+    .Esquerda p{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .Esquerda p{
+        width: 300px;
+    }
+
+   
+}
+
